@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gabriela&family=Kurale&family=Mina:wght@400;700&display=swap');
+$shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+* {
+    box-sizing: border-box;   
+}   
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230, 217, 238);
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.contanier {
+    margin: 30px auto;
+    width: 350px;
+
+    h1 {
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    h3 {
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 10px;
+        margin: 40px 0 10px;
+    }
+    
+    h4 {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+
+    div {
+        flex: 1;
+        text-align: center;
+    }
+
+    div:first-of-type {
+        border-right: 1px solid rgba(184, 184, 184, 0.729)
+    }
+
+    .money {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+    }
+
+    .plus {
+        color: green;
+    }
+
+    .minus {
+        color: red;
+    }
+} 
+
+#form {    
+    label {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    input[type = 'text'],
+    input[type = 'number'] {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    }
+
+    .btn {
+        cursor: pointer;
+        background-color: #b56dd4;
+        margin: 10px 0 30px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .btn:focus {
+        outline: 0;
+    }
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px 0;
+
+    li {
+        background-color: #fff;
+        box-shadow: $shadow;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    li.plus {
+        border-right: 5px solid #2ecc71;
+    }
+
+    li.minus {
+        border-right: 5px solid #c0392b;
+    }
+
+    .delete-btn {
+        cursor: pointer;
+        background-color: #e74c3c;
+        border: 0;
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 2px 5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+        opacity: 0();
+        transition: opacity 0.3 ease;
+    }
+
+    .delete-btn:focus {
+        outline: 0;
+    }
+
+    li:hover .delete-btn {
+        opacity: 1;
+    }
+}
