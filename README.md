@@ -38,6 +38,10 @@
 
 
 
+https://github.com/sahilsoni20/Expense-Tracker/assets/140968802/c1f31c2a-e829-43f1-99bb-794561e63c15
+
+
+
 
 <img src="https://github.com/sahilsoni20/Expense-Tracker/assets/140968802/96597e03-71b7-4abe-842e-692ad5f76631" alt="Expense Tracker" width="600">
 
